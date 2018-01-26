@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<named-config name="mysql-config"><!-- 命名的配置项 -->
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/asset?characterEncoding=utf8</property>
+		<property name="user">root</property>
+		<property name="password">Zju989203</property>
+		<!-- 初始化数据库连接池时连接的数量 -->
+		<property name="initialPoolSize">10</property>
+		<!--最大空闲时间 多长时间未用 就关闭-->
+		<property name="maxIdleTime">30</property>
+		<!-- 数据库连接池中的最大的数据库连接数 -->
+		<property name="maxPoolSize">100</property>
+		<!-- 数据库连接池中的最小的数据库连接数 -->
+		<property name="minPoolSize">10</property>
+		<!-- 若数据库中连接数不足时, 一次向数据库服务器申请多少个连接 -->    
+　　		<property name="acquireIncrement">3</property>    
+	</named-config>
+</c3p0-config>
